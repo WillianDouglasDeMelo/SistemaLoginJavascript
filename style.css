@@ -1,0 +1,80 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif; 
+}
+
+.login{
+	height: 100vh;
+	background-image: linear-gradient(180deg, #ff981e 0, #ff852f 12.5%, #ff713a 25%, #ff5c42 37.5%, #f94646 50%, #e33049 62.5%, #cf1b4b 75%, #bd024d 87.5%, #ac0050 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login_container{
+	min-height: 400px;
+	width: 300px;
+	background-color: #ffffff;
+	box-sizing: border-box; 
+	padding: 32px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login-title{
+	margin-bottom: 32px;
+	color: #303030;
+
+}
+
+.login_form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.login_input{
+	height: 48px;
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 8px;
+	border: unset;
+	outline: none;
+}
+
+.login_input-border{
+	height: 1px;
+	width: 100%
+	margin-bottom: 16px;
+	background: #cfcfcf;
+	transition: .3s ease-in-out;
+}
+
+.login_input-border::after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 0;
+	margin-bottom: 16px;
+	background-image: linear-gradient(180deg, #ff981e 0, #ff852f 12.5%, #ff713a 25%, #ff5c42 37.5%, #f94646 50%, #e33049 62.5%, #cf1b4b 75%, #bd024d 87.5%, #ac0050 100%);
+	transition: .3s ease-in-out;
+}
+
+.login_submit{
+	height: 48;
+	width: 100%;
+	outline: none;
+	background-image: linear-gradient(180deg, #ff981e 0, #ff852f 12.5%, #ff713a 25%, #ff5c42 37.5%, #f94646 50%, #e33049 62.5%, #cf1b4b 75%, #bd024d 87.5%, #ac0050 100%);
+	background-size: 200%;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	border: unset;
+	border-radius: 4px;
+	transition: .5 ease-in-out;
+}
