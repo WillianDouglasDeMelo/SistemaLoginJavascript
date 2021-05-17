@@ -62,7 +62,11 @@ body{
 	width: 0;
 	margin-bottom: 16px;
 	background-image: linear-gradient(180deg, #ff981e 0, #ff852f 12.5%, #ff713a 25%, #ff5c42 37.5%, #f94646 50%, #e33049 62.5%, #cf1b4b 75%, #bd024d 87.5%, #ac0050 100%);
-	transition: .3s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
+.login_input:focus + .login_input-border::after{
+	width: 100%;
 }
 
 .login_submit{
@@ -76,5 +80,14 @@ body{
 	font-weight: bold;
 	border: unset;
 	border-radius: 4px;
-	transition: .5 ease-in-out;
+	cursor: pointer;
+	transition: 0.4s ease;
+}
+.login_submit.error{
+	background-color: #ff0000
+}
+
+.login_submit:hover{
+	transition-delay: 4s;
+	background-image: radial-gradient(circle at 43.84% -20.44%, #009083 0, #009094 3.85%, #0090a3 7.69%, #0090b2 11.54%, #008fc0 15.38%, #008ecc 19.23%, #008cd7 23.08%, #008ae0 26.92%, #0087e7 30.77%, #0084eb 34.62%, #007fed 38.46%, #007aed 42.31%, #0075ea 46.15%, #486ee5 50%, #6e67de 53.85%, #895fd5 57.69%, #9e56c9 61.54%, #b04dbd 65.38%, #be44af 69.23%, #c93ba0 73.08%, #d23491 76.92%, #d82f81 80.77%, #dc2d71 84.62%, #dd2e61 88.46%, #dc3352 92.31%, #d93a43 96.15%, #d44334 100%);
 }
